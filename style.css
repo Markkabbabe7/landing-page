@@ -96,3 +96,41 @@ p.subtext {
     width: 400px;
     height: auto;
 }
+/* Some random information */
+.random {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 700;
+    height: 100px;
+    color: #1f2937;
+}
+
+.multiple-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    height: 400px;
+}
+
+.info {
+    margin-top: 40px;
+    width: 250px;
+    height: 300px;
+}
+
+.one {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.under-the-image {
+    color: rgb(44, 44, 44);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+}
