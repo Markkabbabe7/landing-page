@@ -3,7 +3,10 @@
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+body {
+    display: flex;
+    flex-direction: column;
+}
 header {
     background-color: #1f2937;
     height: 400px;
@@ -44,6 +47,8 @@ nav ul li a{
 /* section */
 section {
     display: flex;
+    flex: 1;
+    flex-direction: row;
     height: 350px;
 }
 /* left side of the section */
@@ -73,16 +78,25 @@ div.hero {
     font-size: 18px;
 }
 
-.button1 {
+.first-button {
     color: #F9FAF8;
     padding: 10px 20px;
     background-color: #3882F6;
     border-radius: 10px;
     width: 120px;
     border:2px solid #3882F6;
+    cursor: pointer;
 }
 /* right side of the section */
 div.place-holder {
     flex: 1;
+}
+
+.section-image {
+    flex-shrink: 1;
+    border-radius: 5px;
+    width: 500px;
+    height: 300px;
+    margin-top: 25px;
 }
 
