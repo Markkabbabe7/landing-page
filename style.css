@@ -4,8 +4,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-    display: flex;
-    flex-direction: column;
+    width: auto;
 }
 header {
     background-color: #1f2937;
@@ -13,8 +12,9 @@ header {
 /* nav */
 nav {
     display: flex;
-    height: 50px;
+    height: auto;
     text-align: center;
+    padding: 20px;
 }
 
 .logo {
@@ -24,6 +24,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 nav ul {
@@ -34,33 +35,33 @@ nav ul {
     align-items: center;
 }
 
-nav ul li {
-    margin-left: 30px;
-}
 nav ul li a{
     color: #F9FAF8;
     text-decoration: none;
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 /* section */
 section {
     display: flex;
-    height: 350px;
+    flex-wrap: wrap;
+    height: auto;
     background-color: #1f2937;
 }
-/* left side of the section */
-.hero {
+
+.left-side {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    padding: 20px;
 }
 
-.container {
-    width: 400px;
-    height: 200px;
+.left-typing {
+    margin: 50px;
+    width: 350px;
+
 }
 
 p.title {
@@ -85,15 +86,18 @@ p.subtext {
     margin-top: 10px;
 }
 /* right side of the section */
-.place-holder {
+.right-side {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
-.header-image {
-    width: 400px;
+.image-finally {
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    /* max-width: 300px; */
     height: auto;
 }
 /* Some random information */
@@ -103,7 +107,8 @@ p.subtext {
     align-items: center;
     font-size: 36px;
     font-weight: 700;
-    height: 100px;
+    /* height: auto; */
+    margin: 20px 0px;
     color: #1f2937;
 }
 /* the images under the random information */
@@ -113,7 +118,7 @@ p.subtext {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    height: 400px;
+    height: auto;
     flex: 1;
 }
 
@@ -125,7 +130,6 @@ p.subtext {
 
 .one {
     width: 250px;
-    /* height: auto; */
     border-radius: 10px;
 }
 
@@ -141,16 +145,15 @@ p.subtext {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto;
     background-color: #E5E7EB;
-    padding: 50px;
 }
 
 .quote-text {
-    margin-bottom: 3px;
-    width: 900px;
     font-size: 30px;
     color: #1f2937;
     background-color: #E5E7EB;
+    padding: 100px;
 }
 
 .author {
@@ -162,20 +165,19 @@ p.subtext {
     justify-content: center;
     align-items: center;
     padding: 50px; 
-    height: 250px;
+    height: auto;
 }
 
 .last-container {
     display: flex;
-    height: 200px;
-    width: 800px;
+    height: auto;
+    width: auto;
     background-color: #3882F6;
     border-radius: 20px;
 }
 
 .lefty {
     width: 66.6%;
-    height: 200px;
     padding: 40px;
 }
 
@@ -183,11 +185,14 @@ p.subtext {
     color: #F9FAF8;
     font-size: 30px;
     font-weight: 700;
+    margin-left: 10px;
 }
 
 .lefty-text-two {
     color: #F9FAF8;
     font-size: 25px;
+    padding: 10px 10px 10px 0;
+    margin-left: 10px;
 }
 
 .righty {
@@ -195,7 +200,7 @@ p.subtext {
     justify-content: center;
     align-items: center;
     width: 33.3%;
-    height: 200px;
+    padding: 30px;
 }
 
 .right-text {
@@ -209,11 +214,15 @@ p.subtext {
 
 footer {
     background-color: #1f2937;
-    height: 100px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #F9FAF8;
+    padding: 40px 0;
 }
 /* The End */
 /* Total working time 6 hours , Regardless flex shrniking problems which isn't fixed yet */
+/* Congrats! Flex problem fixed in all the site within 1 hour */
+/* Total Working Time 7 hours */
+/* p.s : I am not required to make the project looks nice on the mobile  */
